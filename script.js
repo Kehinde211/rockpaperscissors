@@ -1,12 +1,18 @@
 function getComputerChoice() {
     let choices = ["rock", "paper", "scissors"];
     let result = Math.random() * choices.length;
+    if(choice[0]) {
+        alert("You picked rock")
+    } else if (choice[1]) {
+        alert("You picked paper")
+    } else if (choice[2]) {
+        alert("You selected scissors")
+    } else (alert("You haven't made a choice");
     console.log(result);
 }
 function getHumanChoice() {
     let idea = prompt("What would be your preferred choice in your developmental journey?")
-    let answer = idea;
-    console.log(answer); 
+   return(idea) 
 }
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
